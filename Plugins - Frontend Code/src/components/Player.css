@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* navbar */
+
+.logo_vite{
+  width: 135px;
+}
+
+/* player */
+
+/* Gradient Progress Bar */
+.progress-bar {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #ff0080, #ff8c00, #ffff00, #00ff00, #00ffff, #0000ff, #8000ff);
+    border-radius: 5px;
+    overflow: hidden;
+    outline: none;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.progress-bar::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+
+/* poster */
+
+/* Poster background styling */
+.bg-cover {
+    background-size: cover;
+  }
+  
+  .bg-center {
+    background-position: center;
+  }
+  
+
+/* login page */
+
+  .bg-banner-image{
+    background-image: url('/public/login-bg1.jpg');
+  }
+  /* Shadow for the Auth Container */
+  .shadow-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Additional styling for a modern look */
+  input::placeholder {
+    color: #aaa;
+  }
+  
+  input:focus {
+    border-bottom: 2px solid #facc15;
+    transition: border-color 0.3s;
+  }
+  /* Auth.css */
+
+/* For smaller screens */
+@media (max-width: 1024px) {
+  
+    .auth-container {
+      width: 90%;
+      padding: 15px;
+      margin: 0 auto;
+    }
+  
+    .auth-header {
+      font-size: 2.5rem;
+    }
+  
+    .auth-input {
+      padding: 10px;
+    }
+  
+    .auth-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .auth-button {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
+  /* For larger screens */
+  @media (min-width: 1025px) {
+    .auth-container {
+      width: 450px;
+      padding: 20px;
+    }
+  
+    .auth-header {
+      font-size: 4rem;
+    }
+  
+    .auth-input {
+      padding: 15px;
+    }
+  
+    .auth-buttons {
+      flex-direction: row;
+      gap: 20px;
+    }
+  
+    .auth-button {
+      width: 36%;
+      padding: 12px;
+    }
+  }
+
+  /* slider */
+
+/* Add this in your CSS file */
+
+@media (max-width: 768px) {
+  .w-64 {
+    width: 100%;
+  }
+  .h-screen {
+    height: auto;
+  }
+  .flex-grow {
+    padding: 20px;
+  }
+  .w-60 {
+    width: 100%;
+  }
+}
+
+/* sidebar */
+
+/* Sidebar.css */
+@keyframes rainbowMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.rainbow-line {
+  background: linear-gradient(90deg, 
+    red, orange, yellow, green, blue, indigo, violet);
+  background-size: 400% 400%;
+  animation: rainbowMove 3s linear infinite;
+}
+
+/* greeting */
+
+.greet-text{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+/* sidebar and the card */
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+
+/* search page */
+
+/* Card2.css */
+.card2 {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.card2:hover {
+  transform: scale(1.05);
+}
+
+.card2-image {
+  width: 100%;
+  height: auto;
+}
+
+.card2-title {
+  padding: 16px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+
+/* team */
+
+.section-white{
+  padding: 70px 0;
+}
+.team-item{
+  background: #f4f5f6;
+  text-align: center;
+  margin: 20px 0;
+  padding: 50px 20px 40px 20px;
+  border-radius: 8px 8px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+
+/* Teams.jsx page */
+
+.section-white {
+	background: #fff;
+	padding: 70px 0;
+}
+
+.team-item{
+	background: #f4f5f6;
+	text-align:center;
+	margin:20px 0;
+	padding:50px 20px 40px 20px;
+	border-radius: 8px 8px;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+
+.team-item:hover{
+	background: #3956de;
+	color: white;
+}
+
+.team-item h3{
+	margin:20px 0 1px 0!important;
+	color:#454545;
+	font-size:18px;
+	font-weight: 700;
+	text-transform:uppercase;
+	transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+}
+
+.section-subtitle {
+	white-space: pre-line;
+ }
+
+.team-item:hover h3{
+	color:#ddd;
+}
+
+.team-info {
+	display: block;
+	margin-bottom:0;
+}
+
+.team-info p{
+	color:#acacac;
+	font-style:italic;
+}
+
+.team-info::after {
+    background: #008aff;
+    background: -webkit-linear-gradient(135deg, #6B02FF 0%, #985BEF 100%);
+    background: -o-linear-gradient(bottom right, #6B02FF, #985BEF);
+    background: -moz-linear-gradient(bottom right, #008aff, #1ad2fd);
+    background: linear-gradient(135deg, #6B02FF 0%, #985BEF 100%);
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 50px;
+    height: 3px; 
+}
+
+.team-img{
+	max-width: 140px;
+	padding: 6px 6px;
+    background-color: #dedede;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+ul.team-icon {
+	margin-top: 25px;
+}
+
+ul.team-icon li{
+	display: inline-block;
+	margin:0 3px;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+
+ul.team-icon li a{
+	margin: 0;
+	display: inline-block;
+	padding: 8px 8px;
+	width: 34px;
+	height: 34px;
+	font-size: 18px;
+	line-height: 18px;
+	background-color: #fff;
+	border-radius: 50%;
+	color:#fff;
+}
+
+ul.team-icon li a.twitter{
+	background-color: #4099ff;
+}
+
+ul.team-icon li a.pinterest{
+	background-color: #C92228;
+}
+
+ul.team-icon li a.facebook{
+	background-color: #3b5998;
+}
+
+ul.team-icon li a.dribble{
+	background-color: #ea4c89;
+}
+
+.team-icon li a:hover{
+	color:#dedede;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+
+
+/* request songs  */
+
+/* Background container styling */
+.background-container-request {
+  background-image: url('/public/concert.jpg') ;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  z-index: -1;
+  opacity: 1; 
+}
